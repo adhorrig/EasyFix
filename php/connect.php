@@ -1,7 +1,6 @@
 <?php
-	$mysqli = new mysqli("localhost", "root", "password", "easyfix");
-	if($mysqli->connect_errno){
-		echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-	}
-	echo "Connected successfully"
+$db = mysqli_connect('localhost','root','password','easyfix');
+if(mysqli_connect_errno()){
+	echo "Failed to connect to MYSQL: " . mysqli_connect_error();
+}
 ?>
