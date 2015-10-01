@@ -9,5 +9,4 @@
 	$mysqli->query($query);
 	
 	$mysqli->close();
-	?>
 ?>
