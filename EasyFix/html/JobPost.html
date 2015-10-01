@@ -6,6 +6,9 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
       <!-- Latest compiled and minified JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <title>Post a job</title>
       <style type="text/css">
          body { background: grey !important; }
@@ -17,19 +20,28 @@
    <body>
       <div class = "container">
          <div class="wrapper">
-            <form action="jobpost.php" method="POST" name="Login_Form" class="form-signin" >
+            <form action="" method="post" name="Login_Form" class="form-signin" >
                <h3 class="form-signin-heading">Post a job</h3>
                <hr class="colorgraph">
                <br>
                <div class="form-group">
                   <label for="comment">Comment:</label>
                   <textarea class="form-control" rows="3" id="comment"></textarea>
+                  </br> 
+                  <h4>Photos:</h4>
+                  <img class="img-responsive" src="../images/upload.png" alt="upload">     		  
+                  </br> 
+                  <h4>Urgency level</h4>
+                  <div class="dropdown">
+                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Priority 
+                     <span class="caret"></span></button>
+                     <ul class="dropdown-menu">
+                        <li><a href="#">High</a></li>
+                        <li><a href="#">Medium</a></li>
+                        <li><a href="#">Low</a></li>
+                     </ul>
+                  </div>
                </div>
-               </br> 
-               <h4>Photos:</h4>
-               <img class="img-responsive" src="../images/upload.png" alt="upload">     		  
-               </br> 
-               <h4>Urgency level</h4>
                <div class="btn-toobar">
                   <button type="button" class="btn btn-primary">Login</button>&nbsp;&nbsp;
                   <button type="button" class="btn btn-primary">Register</button>
