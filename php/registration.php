@@ -5,8 +5,15 @@
 	$password = $_POST["Password"];
 	$cpassword = $_POST["Cpassword"];
 	
-	$query = "INSERT INTO users VALUES (NUll, $username, $email, $password, $cpassword)";
-	$mysqli->query($query);
+	//echo $username;
+	//echo $email;
+	//echo $password;
+	//echo $cpassword;
 	
-	$mysqli->close();
+	mysqli_query($db,"INSERT INTO users (username, email, password)
+	VALUES ('". $username ."', '". $email ."', '". $password ."')") 
+	or die(mysqli_error($db));
+ 
+	
+
 ?>
