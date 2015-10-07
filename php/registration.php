@@ -14,7 +14,6 @@
 	VALUES ('". $username ."', '". $email ."', '". $password ."')") 
 	or die(mysqli_error($db));
  
-	mysqli_close($db);
 	
 
 ?>

@@ -6,7 +6,17 @@
 	echo $username;
 	echo $password;
 	
-	//or die(mysqli_error($db));
+	//Possible solution for logging a user in below. 
+	/*if($result = mysqli_query($db,"SELECT password FROM USERS WHERE password = '". $username ."' AND username = '". $username ."'")){
+		$count = $result->num_rows;
+		if($count>=1){
+			echo "You can login now"
+		}
+		else{
+			echo "The login credentials were incorrect"
+		}
+	}*/
+	
 
  
 	
