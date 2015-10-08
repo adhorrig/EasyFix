@@ -20,33 +20,22 @@
    <body>
       <div class = "container">
          <div class="wrapper">
-            <form action="registration.php" method="POST" name="Login_Form" class="form-signin" >
-               <h3 class="form-signin-heading">Post a job</h3>
+            <form action="../php/jobpost.php" method="POST" name="Login_Form" class="form-signin" >
+               <h3 class="form-signin-heading">Post a job!</h3>
                <hr class="colorgraph">
                <br>
-               <div class="form-group">
-                  <label for="comment">Comment:</label>
-                  <textarea class="form-control" rows="3" id="comment"></textarea>
-                  </br> 
-                  <h4>Photos:</h4>
-                  <img class="img-responsive" src="../images/upload.png" alt="upload">     		  
-                  </br> 
-                  <h4>Urgency level</h4>
-                  <div class="dropdown">
-                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Priority 
-                     <span class="caret"></span></button>
-                     <ul class="dropdown-menu">
-                        <li><a href="#">High</a></li>
-                        <li><a href="#">Medium</a></li>
-                        <li><a href="#">Low</a></li>
-                     </ul>
-                  </div>
-               </div>
+			   <h4>Description of the problem</h4>
+               <textarea class="form-control" rows="3" id="comment" name="comment" required="" autofocus=""></textarea>
+               </br>
+               <h4> Price</h4>
+               <input type="text" class="form-control" name="price" placeholder="Price for the job" required="" autofocus="" />
+               </br>			  
+               <h4> Urgency level</h4>
+               <input type="text" class="form-control" name="urgency" placeholder="High, medium, low?" required=""/>     		  
+               </br> 
                <div class="btn-toobar">
-                  <button type="button" class="btn btn-primary">Login</button>&nbsp;&nbsp;
-                  <button type="button" class="btn btn-primary">Register</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
                </div>
-            </form>
          </div>
       </div>
    </body>
