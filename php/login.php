@@ -11,6 +11,7 @@
 		$count = $result->num_rows;
 		if($count>=1){
 			echo "You can login now";
+			
 		}
 		else{
 			echo "The login credentials were incorrect";

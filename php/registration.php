@@ -13,6 +13,7 @@
 	mysqli_query($db,"INSERT INTO users (username, email, password)
 	VALUES ('". $username ."', '". $email ."', '". $password ."')") 
 	or die(mysqli_error($db));
+	include('../html/login.html');
  
 	
 
