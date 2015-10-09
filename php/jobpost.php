@@ -3,10 +3,10 @@ require 'connect.php';
 $description = $_POST["comment"];
 $price = $_POST=["price"];
 $urgency = $_POST["urgency"];
-
-echo $description;
+var_dump($_POST);
+/*echo $description;
 echo $price;
-echo $urgency;
+echo $urgency;*/
 
 mysqli_query($db,"INSERT INTO jobs (description, price, urgency)
 	VALUES ('". $description ."', '". $price ."', '". $urgency ."')") 
