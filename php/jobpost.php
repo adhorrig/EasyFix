@@ -3,7 +3,7 @@ require 'connect.php';
 $description = $_POST["comment"];
 $price = $_POST["price"];
 $urgency = $_POST["urgency"];
-var_dump($_POST);
+
 /*echo $description;
 echo $price;
 echo $urgency;*/
