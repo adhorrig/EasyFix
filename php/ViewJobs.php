@@ -27,6 +27,7 @@
 							<h4> Description: </h4><?php echo $row->description; ?><br><br>
 							<h4> Price: </h4><?php echo $row->price; ?><br><br>
 							<h4> Urgency: </h4><?php echo $row->urgency; ?><br><br>
+							<button type="submit" class="btn btn-primary">Accept job</button>
 							
 						</div>
 			<?php          
