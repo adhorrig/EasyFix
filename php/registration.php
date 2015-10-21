@@ -14,7 +14,7 @@
 			mysqli_query($db,"INSERT INTO users (username, email, password, AccountType)
 			VALUES ('". $username ."', '". $email ."', '". $password ."', '". $accounttype ."')") 
 			or die(mysqli_error($db));
-			include('../html/login.html');
+			include('../html/UserInformation.html');
 		}
 	}
 ?>

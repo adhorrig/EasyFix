@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <title>Register for an account</title>
+        <style type="text/css">
+            body{
+            background-color: #E8E8E8;
+            }
+            .other-color{
+            background-color:#c0c0c0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "jumbotron other-color">
+                <div class="wrapper">
+                    <form action="../php/UserInformation.php" method="POST" name="Login_Form" class="form-signin" >
+                        <h3 class="form-signin-heading">Continue Registration</h3>
+                        <hr class="colorgraph">
+                        <br>
+                        <h4><b>Forename</b></h4>
+                        <input type="text" class="form-control" name="forname" placeholder="Your forename" required="" autofocus="" />
+                        </br>
+                        <h4><b>Surname:</b></h4>
+                        <input type="text" class="form-control" name="surname" placeholder="Your surname" required="" autofocus="" />
+                        </br>
+                        <h4><b>Address:</b></h4>
+                        <input type="text" class="form-control" name="address" placeholder="Your address" required="" autofocus="" />
+                        </br>			  
+                        <h4><b>Gender:</b></h4>
+                        <input type="text" class="form-control" name="gender" placeholder="Your gender" required=""/>     		  
+                        </br> 
+                        <h4><b>Age</b></h4>
+                        <input type="text" class="form-control" name="age" placeholder="Your age" required=""/>
+                        </br>
+                        <div class="btn-toobar">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
