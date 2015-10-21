@@ -8,10 +8,13 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <title>View Jobs</title>
       <style type="text/css">
-         body { background: grey !important; }
-         .btn-group{
-         margin-left:10px;
-         }
+        body{
+           background-color: #E8E8E8;
+		}
+		 
+		 .other-color{
+			background-color:#c0c0c0;
+		}
       </style>
    </head>
    <body>
@@ -23,7 +26,7 @@
 					if($count = $result->num_rows){
 						while($row = $result->fetch_object()){
 			?>
-						<div class = "jumbotron">
+						<div class = "jumbotron other color">
 							<h4> Description: </h4><?php echo $row->description; ?><br><br>
 							<h4> Price: </h4><?php echo $row->price; ?><br><br>
 							<h4> Urgency: </h4><?php echo $row->urgency; ?><br><br>
