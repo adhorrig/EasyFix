@@ -1,40 +1,38 @@
 <html>
-   <head>
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      <!-- Optional theme -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-      <!-- Latest compiled and minified JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-     
-      <title>Login to an existing account</title>
-      <style type="text/css">
-		body{
-           background-color: #E8E8E8;
-		}
-		
-		.other-color{
-			background-color:#c0c0c0;
-		}
-      </style>
-   </head>
-   <body>
-      <div class = "container">
-         <div class="jumbotron other-color">
-            <form action="../php/login.php" method="POST" name="Login_Form" class="form-signin" >
-               <h3 class="form-signin-heading">Welcome Back! Please Sign In</h3>
-               <hr class="colorgraph">
-               <br>
-               <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" />
-               </br> 
-               <input type="password" class="form-control" name="password" placeholder="Password" required=""/>     		  
-               </br> 
-               <div class="btn-toobar">
-                  <button type="submit" class="btn btn-primary">Login</button>&nbsp;&nbsp;
-                  <a href = "Registration.html"><button type="button" class="btn btn-primary">Register</button></a>
-               </div>
-            </form>
-         </div>
-      </div>
-   </body>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <title>Login to an existing account</title>
+        <style type="text/css">
+            body{
+            background-color: #E8E8E8;
+            }
+            .other-color{
+            background-color:#c0c0c0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "container">
+            <div class="jumbotron other-color">
+                <form action="../php/login.php" method="POST" name="Login_Form" class="form-signin" >
+                    <h3 class="form-signin-heading">Welcome Back! Please Sign In</h3>
+                    <hr class="colorgraph">
+                    <br>
+                    <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" />
+                    </br> 
+                    <input type="password" class="form-control" name="password" placeholder="Password" required=""/>     		  
+                    </br> 
+                    <div class="btn-toobar">
+                        <button type="submit" class="btn btn-primary">Login</button>&nbsp;&nbsp;
+                        <a href = "Registration.html"><button type="button" class="btn btn-primary">Register</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>
