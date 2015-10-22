@@ -14,10 +14,11 @@
 			
 		}
 		else{
+			include('../html/login.html'); 
 			echo '<script language="javascript">';
 			echo 'alert("Username or password was entered incorrectly")';
 			echo '</script>';
-		include('../html/login.html'); 
+		
 		}
 	}
 	
