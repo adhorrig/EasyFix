@@ -43,6 +43,9 @@
                         <li>
                             <a href="#">Your profile</a>
                         </li>
+						<li>
+                            <a href="#">Logout</a>
+                        </li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
