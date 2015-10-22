@@ -11,6 +11,7 @@ echo $urgency;*/
 mysqli_query($db,"INSERT INTO jobs (description, price, urgency)
 	VALUES ('". $description ."', '". $price ."', '". $urgency ."')") 
 	or die(mysqli_error($db));
+	include('../html/JobPostConfirm.html');
 
 
 
