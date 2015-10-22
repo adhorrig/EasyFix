@@ -14,7 +14,10 @@
 			
 		}
 		else{
-			echo "The login credentials were incorrect";
+			echo '<script language="javascript">';
+			echo 'alert("Username or password was entered incorrectly")';
+			echo '</script>';
+		include('../html/login.html'); 
 		}
 	}
 	
