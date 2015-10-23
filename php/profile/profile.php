@@ -15,6 +15,17 @@
             background-color: #c0c0c0;
             }
         </style>
+		
+		<script> 
+				function myFunctiuon (){ 
+					
+					<?php 
+							exit("You have Loged out!");
+					?> 
+				
+				
+				}
+		</script> 
     </head>
     <body>
         <div class="container">
@@ -31,7 +42,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active">
+                        <li>
                             <a href="../welcomepages/WelcomeCustomer.php">Home</a>
                         </li>
                         <li>
@@ -40,11 +51,11 @@
                         <li>
                             <a href="#">View available tradesmen</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="profile.php">Your profile</a>
                         </li>
                         <li>
-                            <a href="#">Logout</a>
+                            <a href="logout.php">Logout</a>
                         </li>
                     </ul>
                 </div>
