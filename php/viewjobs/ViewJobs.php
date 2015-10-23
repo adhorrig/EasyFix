@@ -43,7 +43,7 @@
                         <li>
                             <a href="../profile/profile.php">Your profile</a>
                         </li>
-						<li>
+			                  <li>
                             <a href="#">Logout</a>
                         </li>
                     </ul>
