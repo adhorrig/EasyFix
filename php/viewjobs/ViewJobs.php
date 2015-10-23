@@ -53,26 +53,26 @@
             <!--/.container-fluid -->
         </nav>
 
-            <?php
-				require 'connect.php';
-				if($result = $db->query("SELECT description,price,urgency FROM jobs ")){
-					if($count = $result->num_rows){
-						while($row = $result->fetch_object()){
-			?>
-						<div class = "jumbotron other-color">
-							<h4> <b>Description:</b> </h4><?php echo $row->description; ?><br><br>
-							<h4> <b>Price: </b></h4><?php echo $row->price; ?><br><br>
-							<h4> <b>Urgency: </b> </h4><?php echo $row->urgency; ?><br><br>
-							<button type="submit" class="btn btn-primary">Accept job</button>
+        <?php
+				    require 'connect.php';
+				        if($result = $db->query("SELECT description,price,urgency FROM jobs ")){
+					         if($count = $result->num_rows){
+					  	       while($row = $result->fetch_object()){
+		  	?>
+				<div class = "jumbotron other-color">
+    				<h4> <b>Description:</b> </h4><?php echo $row->description; ?><br><br>
+    				<h4> <b>Price: </b></h4><?php echo $row->price; ?><br><br>
+    				<h4> <b>Urgency: </b> </h4><?php echo $row->urgency; ?><br><br>
+    				<button type="submit" class="btn btn-primary">Accept job</button>
 
-						</div>
-			<?php
-					}
-				$result->free();
-				}
-			}
+				</div>
+	      <?php
+			                 }
+				               $result->free();
+                  }
+             }
 			?>
-         </div>
+      </div>
 
    </body>
 </html>

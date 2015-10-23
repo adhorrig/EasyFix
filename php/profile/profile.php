@@ -1,3 +1,9 @@
+<?php
+  require '../connect.php';
+  session_start();
+  $_SESSION['username'];
+?>
+
 <html>
     <head>
         <!-- Latest compiled and minified CSS -->
@@ -15,17 +21,6 @@
             background-color: #c0c0c0;
             }
         </style>
-		
-		<script> 
-				function myFunctiuon (){ 
-					
-					<?php 
-							exit("You have Loged out!");
-					?> 
-				
-				
-				}
-		</script> 
     </head>
     <body>
         <div class="container">
@@ -42,7 +37,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li>
+                        <li class="active">
                             <a href="../welcomepages/WelcomeCustomer.php">Home</a>
                         </li>
                         <li>
@@ -51,11 +46,11 @@
                         <li>
                             <a href="#">View available tradesmen</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="profile.php">Your profile</a>
                         </li>
                         <li>
-                            <a href="logout.php">Logout</a>
+                            <a href="../session/destroy.php">Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -63,10 +58,23 @@
             </div>
             <!--/.container-fluid -->
         </nav>
+        <?php
+            if($result = $db->query("SELECT * FROM userinformation WHERE username = '". $SESSION['username']. "'")){
+                if($count = $result->num_rows){
+        ?>
         <div class = "jumbotron other-color" align="center">
-            <h2>Profile</h2>
-            <p>Tom Sin - Tradesman </p>
-            <img src="../../images/liam.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+            <img src="../../images/liam.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"/>
+            <h4> <b>Forename:</b> </h4><?php echo $row->forename; ?><br><br>
+            <h4> <b>Surname:</b> </h4><?php echo $row->surname; ?><br><br>
+            <h4> <b>Address:</b> </h4><?php echo $row->address; ?><br><br>
+            <h4> <b>Age:</b> </h4><?php echo $row->age; ?><br><br>
+            <h4> <b>Gender: </b> </h4><?php echo $row->gender; ?><br><br>
+            <h4> <b>Username:</b> </h4><?php echo $row->username; ?><br><br>
         </div>
+        <?php
+                }
+                $result->free();
+             }
+         ?>
     </body>
 </html>
