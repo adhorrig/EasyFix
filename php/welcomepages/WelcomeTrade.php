@@ -55,15 +55,15 @@
                 <form action="" method="post" name="Login_Form" class="form-signin" >
                     <br/>
                     <div class="row row-centered"  >
-                        <img src="../../images/handshake.png" class="img-responsive center-block" alt="handshake">
+                        <img src="../../images/bluehandshake.png" class="img-responsive center-block" alt="handshake">
                     </div>
                     <div class="container-fluid">
                         <div class="row row-centered"  >
                             <br/>
                             <br/>
-                            <p><a href="../jobpost/jobpostView.php"><button type="button" class="btn btn-success btn-lg btn-block ">Post a job</button></a></p>
-                            <p><a href="../php/SetAvailability"><button type="button" class="btn btn-success btn-lg btn-block">View available tradesmen</button></a></p>
-                            <p><a href="../profile/profile.php"><button type="button" class="btn btn-success btn-lg btn-block" href = "/php/jobpost.php">My Profile</button></a></p>
+                            <p><a href="../viewjobs/viewjobs.php"><button type="button" class="btn btn-primary btn-lg btn-block ">View jobs</button></a></p>
+                            <p><a href="../php/SetAvailability"><button type="button" class="btn btn-primary btn-lg btn-block">Set your availability</button></a></p>
+                            <p><a href="../profile/profile.php"><button type="button" class="btn btn-primary btn-lg btn-block" href = "/php/jobpost.php">My Profile</button></a></p>
                         </div>
                     </div>
                 </form>
