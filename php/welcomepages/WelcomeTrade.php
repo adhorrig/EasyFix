@@ -31,22 +31,21 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active">
-                                <a href="../html/WelcomeTrade.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="../php/ViewJobs.php">View job</a>
-                            </li>
-                            <li>
-                                <a href="#">Set your availability</a>
-                            </li>
-                            <li>
-                                <a href="#">Your profile</a>
-                            </li>
-							<li>
-                                <a href="#">Logout</a>
-                            </li>
-                        </ul>
+                        <li class="active">
+                            <a href="WelcomeCustomer.php">Home</a>
+                        </li>
+                        <li>
+                            <a href="../jobpost/jobpostView.php">Post a job</a>
+                        </li>
+                        <li>
+                            <a href="#">Set your availability</a>
+                        </li>
+                        <li>
+                            <a href="../profile/profile.php">Your profile</a>
+                        </li>
+                        <li>
+                            <a href="#">Logout</a>
+                        </li>
                     </div>
                     <!--/.nav-collapse -->
                 </div>
@@ -56,15 +55,15 @@
                 <form action="" method="post" name="Login_Form" class="form-signin" >
                     <br/>
                     <div class="row row-centered"  >
-                        <img src="../images/bluehandshake.png" class="img-responsive center-block" alt="handshake">
+                        <img src="../../images/handshake.png" class="img-responsive center-block" alt="handshake">
                     </div>
                     <div class="container-fluid">
                         <div class="row row-centered"  >
                             <br/>
                             <br/>
-                            <p><a href="../php/ViewJobs.php"><button type="button" class="btn btn-primary btn-lg btn-block ">View Jobs</button></a></p>
-                            <p><a href="../php/SetAvailability"><button type="button" class="btn btn-primary btn-lg btn-block">Set availability</button></a></p>
-                            <p><a href="../php/MyProfile"><button type="button" class="btn btn-primary btn-lg btn-block" href = "/php/jobpost.php">My Profile</button></a></p>
+                            <p><a href="../jobpost/jobpostView.php"><button type="button" class="btn btn-success btn-lg btn-block ">Post a job</button></a></p>
+                            <p><a href="../php/SetAvailability"><button type="button" class="btn btn-success btn-lg btn-block">View available tradesmen</button></a></p>
+                            <p><a href="../profile/profile.php"><button type="button" class="btn btn-success btn-lg btn-block" href = "/php/jobpost.php">My Profile</button></a></p>
                         </div>
                     </div>
                 </form>

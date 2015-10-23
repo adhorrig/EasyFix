@@ -1,5 +1,5 @@
-<?php 
-	require 'connect.php';
+<?php
+	require '../connect.php';
 	$forename = $_POST["forename"];
 	$surname = $_POST["surname"];
 	$address = $_POST["address"];
@@ -10,5 +10,5 @@
 	mysqli_query($db,"INSERT INTO userinformation (address, forename, surname, gender, age)
 	VALUES ('". $address ."', '". $forename ."', '". $surname ."', '". $gender ."', '". $age ."')")
 	or die(mysqli_error($db));
-	include('../html/login.html');
+	include('../../html/registration/login.html');
 ?>

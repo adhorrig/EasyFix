@@ -32,16 +32,16 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="../html/WelcomeTrade.html">Home</a>
+                            <a href="../welcomepages/WelcomeTrade.php">Home</a>
                         </li>
                         <li>
-                            <a href="../php/ViewJobs.php">View job</a>
+                            <a href="ViewJobs.php">View job</a>
                         </li>
                         <li>
                             <a href="#">Set your availability</a>
                         </li>
                         <li>
-                            <a href="#">Your profile</a>
+                            <a href="../profile/profile.php">Your profile</a>
                         </li>
 						<li>
                             <a href="#">Logout</a>
@@ -52,8 +52,8 @@
             </div>
             <!--/.container-fluid -->
         </nav>
-         
-            <?php 
+
+            <?php
 				require 'connect.php';
 				if($result = $db->query("SELECT description,price,urgency FROM jobs ")){
 					if($count = $result->num_rows){
@@ -64,15 +64,15 @@
 							<h4> <b>Price: </b></h4><?php echo $row->price; ?><br><br>
 							<h4> <b>Urgency: </b> </h4><?php echo $row->urgency; ?><br><br>
 							<button type="submit" class="btn btn-primary">Accept job</button>
-							
+
 						</div>
-			<?php          
+			<?php
 					}
 				$result->free();
 				}
 			}
 			?>
          </div>
- 
+
    </body>
 </html>

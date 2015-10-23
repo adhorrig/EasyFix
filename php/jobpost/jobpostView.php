@@ -35,18 +35,18 @@
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li class="active">
-                                <a href="../html/WelcomeCustomer.html">Home</a>
+                                <a href="../welcomepages/WelcomeCustomer.php">Home</a>
                             </li>
                             <li>
-                                <a href="../html/JobPost.html">Post a job</a>
+                                <a href="../jobpost/jobpostView.php">Post a job</a>
                             </li>
                             <li>
                                 <a href="#">View available tradesmen</a>
                             </li>
                             <li>
-                                <a href="#">Your profile</a>
+                                <a href="../profile/profile.php">Your profile</a>
                             </li>
-							<li>
+                            <li>
                                 <a href="#">Logout</a>
                             </li>
                         </ul>
@@ -56,7 +56,7 @@
                 <!--/.container-fluid -->
             </nav>
             <div class="jumbotron other-color">
-                <form action="../php/jobpost.php" method="POST" name="JobPost" class="form-signin" >
+                <form action="jobpost.php" method="POST" name="JobPost" class="form-signin" >
                     <h3 class="form-signin-heading">Post a job!</h3>
                     <hr class="colorgraph">
                     <br>
@@ -65,10 +65,10 @@
                     </br>
                     <h4><b>Price</b></h4>
                     <input type="text" class="form-control" name="price" placeholder="Price for the job" required="" autofocus="" />
-                    </br>			  
+                    </br>
                     <h4><b>Urgency level</b></h4>
-                    <input type="text" class="form-control" name="urgency" placeholder="High, medium, low?" required=""/>     		  
-                    </br> 
+                    <input type="text" class="form-control" name="urgency" placeholder="High, medium, low?" required=""/>
+                    </br>
                     <div class="btn-toolbar">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>

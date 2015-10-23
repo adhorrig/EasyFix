@@ -35,18 +35,18 @@
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li class="active">
-                                <a href="../html/WelcomeCustomer.html">Home</a>
+                                <a href="../welcomepages/WelcomeCustomer.php">Home</a>
                             </li>
                             <li>
-                                <a href="../html/JobPost.html">Post a job</a>
+                                <a href="../jobpost/jobpostView.php">Post a job</a>
                             </li>
                             <li>
                                 <a href="#">View available tradesmen</a>
                             </li>
                             <li>
-                                <a href="#">Your profile</a>
+                                <a href="../profile/profile.php">Your profile</a>
                             </li>
-							<li>
+                            <li>
                                 <a href="#">Logout</a>
                             </li>
                         </ul>
