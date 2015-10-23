@@ -59,8 +59,9 @@
             <!--/.container-fluid -->
         </nav>
         <?php
-            if($result = $db->query("SELECT * FROM userinformation WHERE username = '". $SESSION['username']. "'")){
+            if($result = $db->query("SELECT * FROM userinformation WHERE username = '". $_SESSION['username']. "'")){
                 if($count = $result->num_rows){
+                    while($row = $result->fetch_object()){
         ?>
         <div class = "jumbotron other-color" align="center">
             <img src="../../images/liam.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"/>
@@ -72,9 +73,10 @@
             <h4> <b>Username:</b> </h4><?php echo $row->username; ?><br><br>
         </div>
         <?php
-                }
-                $result->free();
-             }
+                    }
+                    $result->free();
+                 }
+              }
          ?>
     </body>
 </html>
