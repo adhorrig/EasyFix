@@ -44,7 +44,7 @@
                             <a href="../profile/profile.php">Your profile</a>
                         </li>
                         <li>
-                            <a href="#">Logout</a>
+                            <a href="..session/destory.php">Logout</a>
                         </li>
                     </div>
                     <!--/.nav-collapse -->

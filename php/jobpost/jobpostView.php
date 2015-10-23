@@ -47,7 +47,7 @@
                                 <a href="../profile/profile.php">Your profile</a>
                             </li>
                             <li>
-                                <a href="#">Logout</a>
+                                <a href="../session/destroy.php">Logout</a>
                             </li>
                         </ul>
                     </div>
