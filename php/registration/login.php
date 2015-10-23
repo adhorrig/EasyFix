@@ -1,7 +1,9 @@
 <?php
 	require '../connect.php';
+	session_start();
 	$username = $_POST["username"];
 	$password = $_POST["password"];
+	$_SESSION['username'] = $username;
 
 	//echo $username;
 	//echo $password;
