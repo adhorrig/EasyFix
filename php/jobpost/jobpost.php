@@ -6,9 +6,7 @@ $description = $_POST["comment"];
 $price = $_POST["price"];
 $urgency = $_POST["urgency"];
 
-/*echo $description;
-echo $price;
-echo $urgency;*/
+
 
 mysqli_query($db,"INSERT INTO jobs (description, price, urgency, username)
 	VALUES ('". $description ."', '". $price ."', '". $urgency ."', '". $_SESSION['username']. "')")
@@ -17,11 +15,7 @@ mysqli_query($db,"INSERT INTO jobs (description, price, urgency, username)
 
 
 
-/*
-mysqli_query($db,"INSERT INTO users (username, email, password)
-	VALUES ('". $username ."', '". $email ."', '". $password ."')")
-	or die(mysqli_error($db));
-*/
+
 
 
 
