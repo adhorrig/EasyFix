@@ -71,7 +71,11 @@
             <h4> <b>Age:</b> </h4><?php echo $row->age; ?><br><br>
             <h4> <b>Gender: </b> </h4><?php echo $row->gender; ?><br><br>
             <h4> <b>Username:</b> </h4><?php echo $row->username; ?><br><br>
+										
+		<button type="button" class="btn btn-primary" onClick="parent.location='TradeLocation.php'">Current Location</button>
+			
         </div>
+		
         <?php
                     }
                     $result->free();
