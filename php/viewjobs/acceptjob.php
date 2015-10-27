@@ -2,17 +2,20 @@
     require '../connect.php';
     session_start();
     $_SESSION['username'];
+    if(isset($_GET['jobid'])){
+        $id = $_GET['jobid'];
 
-    $sql = "SELECT latitude, longitude FROM userinformation WHERE username = '". $_SESSION['username']. "'";
-    $result = $db->query($sql);
+        $sql = "SELECT * FROM userinformation as U INNER JOIN jobs as J ON U.username = J.username WHERE J.id = $id;";
+        $result = $db->query($sql);
 
-    if($result->num_rows > 0){
-        while($row = $result->fetch_assoc()){
-            $lat = $row["latitude"];
-            $lng = $row["longitude"];
-            echo $lat;
-            echo $lng;
+        if($result->num_rows > 0){
+            while($row = $result->fetch_assoc()){
+                $lat = $row["latitude"];
+                $lng = $row["longitude"];
+                echo $lat;
+                echo $lng;
 
+            }
         }
     }
 ?>
@@ -34,7 +37,7 @@
     </style>
   </head>
   <body>
-    <!--<div id="map"></div>!-->
+    <div id="map"></div>
     <script>
 
 // The following example creates a marker in Stockholm, Sweden using a DROP
