@@ -5,7 +5,7 @@
     if(isset($_GET['jobid'])){
         $id = $_GET['jobid'];
 
-        $sql = "SELECT * FROM userinformation as U INNER JOIN jobs as J ON U.username = J.username WHERE J.id = $id;";
+        $sql = "SELECT latitude, longitude FROM userinformation as U INNER JOIN jobs as J ON U.username = J.username WHERE J.id = $id;";
         $result = $db->query($sql);
 
         if($result->num_rows > 0){
