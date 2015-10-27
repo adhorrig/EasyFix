@@ -34,7 +34,7 @@
     </style>
   </head>
   <body>
-    <div id="map"></div>
+    <!--<div id="map"></div>!-->
     <script>
 
 // The following example creates a marker in Stockholm, Sweden using a DROP

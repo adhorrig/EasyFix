@@ -55,19 +55,19 @@
 
         <?php
 		    require '../connect.php';
-	           if($result = $db->query("SELECT description,price,urgency FROM jobs ")){
+	           if($result = $db->query("SELECT id,description,price,urgency FROM jobs ")){
 	                if($count = $result->num_rows){
                         while($row = $result->fetch_object()){
 		  	?>
 			<div class = "jumbotron other-color">
-                <form action="acceptjob.html" method="POST" name="Accept job" class="form-signin" >
+
         			<h4> <b>Description:</b> </h4><?php echo $row->description; ?><br><br>
         			<h4> <b>Price: </b></h4><?php echo $row->price; ?><br><br>
         			<h4> <b>Urgency: </b> </h4><?php echo $row->urgency; ?><br><br>
                 <div class="btn-toobar">
-                    <button type="submit" class="btn btn-primary">Accept job</button>
+                    <a href='acceptjob.php?jobid=<?php echo $row->id; ?>'><button type="submit" class="btn btn-primary">Accept job</button></a>
                 </div>
-              </form>
+
           </div>
 	      <?php
 		                  }
