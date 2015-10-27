@@ -1,10 +1,13 @@
 <?php
 	require '../connect.php';
+	session_start();
 	$username = $_POST["username"];
 	$email = $_POST["email"];
 	$password = $_POST["password"];
 	$cpassword = $_POST["cpassword"];
 	$accounttype = $_POST["actype"];
+	$_SESSION["usernameReg"] = $username;
+
 
 	if($checkusername = mysqli_query($db, "SELECT username, email FROM USERS WHERE username = '". $username ."'")){
 		$count = $checkusername->num_rows;
