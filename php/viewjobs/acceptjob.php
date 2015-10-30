@@ -90,7 +90,7 @@
                   <div id="navbar" class="navbar-collapse collapse">
                       <ul class="nav navbar-nav">
                           <li class="active">
-                              <a href="../welcomepages/WelcomeCustomer.php">Home</a>
+                              <a href="../welcomepages/WelcomeTrade.php">Home</a>
                           </li>
                           <li>
                               <a href="../jobpost/jobpostView.php">Post a job</a>
@@ -112,6 +112,9 @@
           </nav>
           <div class = "jumbotron other-color" align="center">
               <h4> The location of the job is below </h4>
+              <div class="btn-toobar">
+                  <a href='../mail/mail.php?jobid=<?php echo $_GET['jobid']; ?>'><button type="submit" class="btn btn-primary">Let the job poster know that you are leaving.</button></a> </br>
+              </div>
               <div id="map"></div>
           </div>
       </div>

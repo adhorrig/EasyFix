@@ -64,9 +64,9 @@
         			<h4> <b>Description:</b> </h4><?php echo $row->description; ?><br><br>
         			<h4> <b>Price: </b></h4><?php echo $row->price; ?><br><br>
         			<h4> <b>Urgency: </b> </h4><?php echo $row->urgency; ?><br><br>
-                <div class="btn-toobar">
-                    <a href='acceptjob.php?jobid=<?php echo $row->id; ?>'><button type="submit" class="btn btn-primary">Accept job</button></a>
-                </div>
+              <div class="btn-toobar">
+                  <a href='acceptjob.php?jobid=<?php echo $row->id; ?>'><button type="submit" class="btn btn-primary">Accept job</button></a>
+              </div>
 
           </div>
 	      <?php
