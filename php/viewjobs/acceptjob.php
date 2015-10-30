@@ -12,9 +12,6 @@
             while($row = $result->fetch_assoc()){
                 $lat = $row["latitude"];
                 $lng = $row["longitude"];
-                echo $lat;
-                echo $lng;
-
             }
         }
     }
