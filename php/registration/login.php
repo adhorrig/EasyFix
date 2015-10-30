@@ -14,10 +14,10 @@
 					$accounttype = $row["AccountType"];
 					if($count>=1){
 							if($accounttype == "Customer"){
-									include('../welcomepages/WelcomeCustomer.php');
+									header('Location: ../welcomepages/WelcomeCustomer.php');
 							}
 							else if($accounttype = "Tradesmen"){
-									include('../welcomepages/WelcomeTrade.php');
+									header('Location: ../welcomepages/WelcomeTrade.php');
 							}
 					}
 					else{
