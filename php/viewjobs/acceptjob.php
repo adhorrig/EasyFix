@@ -99,7 +99,7 @@
                               <a href="#">View available tradesmen</a>
                           </li>
                           <li>
-                              <a href="profile.php">Your profile</a>
+                              <a href="../profile/profile.php">Your profile</a>
                           </li>
                           <li>
                               <a href="../session/destroy.php">Logout</a>
