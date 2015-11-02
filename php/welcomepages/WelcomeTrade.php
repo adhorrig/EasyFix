@@ -32,10 +32,10 @@
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="WelcomeCustomer.php">Home</a>
+                            <a href="WelcomeTrade.php">Home</a>
                         </li>
                         <li>
-                            <a href="../jobpost/jobpostView.php">Post a job</a>
+                            <a href="../jobpost/jobpostView.php">View jobs</a>
                         </li>
                         <li>
                             <a href="#">Set your availability</a>
