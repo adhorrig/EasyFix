@@ -57,7 +57,7 @@
             <div class="jumbotron other-color">
                 <h4> Set your active status below </h4>
                 <form action="success.php" method="post" name="availability" class="form-signin" >
-                  <select class="form-control">
+                  <select name="availability" class="form-control">
                       <option name = "active">I am available</option>
                       <option name = "notActive">I am not available.</option>
                   </select>
