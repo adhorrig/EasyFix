@@ -9,10 +9,11 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <title>HomeScreen</title>
       <style type="text/css">
-        body{
-           background-color: #E8E8E8;
-		}
-
+         body{
+           
+			background-image: url(images/bg2.jpg);
+			background-size: 100%;
+			}
 		 .other-color{
 			background-color:#c0c0c0;
 		}
@@ -24,11 +25,18 @@
          -moz-border-radius: 8px;
          border-radius: 8px;
          }
+		 .container {
+		 margin-top:5%;
+		 }
+		  .row {
+		 margin-top:5%;
+		 }
       </style>
    </head>
    <body>
+    <div class="container">
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+ 
     <div class="navbar-header">
       <a class="navbar-brand" href="#">EasyFix</a>
     </div>
@@ -41,26 +49,27 @@
 		<li><a href="#">About</a></li>
       </ul>
     </div>
+	</nav>
   </div>
-</nav>
-
-<div class="row">
- <div class="col-md-6 col-md-offset-1">
-   <a href="html/registration/login.html"><img class="img-responsive" src="images/Customer.png" width="400" height ="400" >
-   <h1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Customer <h1> 
- </div>
- <div class="col-md-6-6">
-   
-  <a href="html/registration/login.html"><img class="img-responsive" src="images/tradesman.png" width="400" height ="400"/></a> 
-   <h1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Tradesman </h1> 
-   
- </div>
 
 
+	<div class = "container" >
 
- 
-</div>
-
-
+				<form action="" method="post" name="Login_Form" class="form-signin" >
+					<img src="images/logo.png" class="img-responsive center-block"  >
+						<div class="btn-toobar">
+							<a href = "html/registration/login.html">
+								<div class="row">
+									<div class="col-md-6 ">
+										<img src="images/customer.png" class="img-thumbnail" alt="Cinque Terre" class="img-responsive center-block"  >		
+									</div>
+									<div class="col-md-6 ">
+										<img src="images/trade.png" class="img-thumbnail" alt="Cinque Terre" class="img-responsive center-block"  >
+									</div>
+								</div>
+							</a>
+						</div>
+				</form>
+		</div>
 	</body>
 </html>
