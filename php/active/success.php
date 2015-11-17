@@ -1,10 +1,10 @@
 <?php
 	require '../connect.php';
 	session_start();
-	$username = $_POST["username"];
-  $availability = $_POST["availability"];
+	$username = $_SESSION["username"];
+    $availability = $_POST["availability"];
 
-  mysqli_query($db,"UPDATE userinformation SET availability = '". $availability ."' WHERE username = '". $username ."')")
+    mysqli_query($db,"UPDATE userinformation SET availability = '". $availability ."' WHERE username = '". $username ."'")
 	or die(mysqli_error($db));
 
 ?>

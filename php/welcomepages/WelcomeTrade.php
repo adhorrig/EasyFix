@@ -38,7 +38,7 @@
                             <a href="../jobpost/jobpostView.php">View jobs</a>
                         </li>
                         <li>
-                            <a href="#">Set your availability</a>
+                            <a href="../active/setactive.php">Set your availability</a>
                         </li>
                         <li>
                             <a href="../profile/profile.php">Your profile</a>
@@ -62,7 +62,7 @@
                             <br/>
                             <br/>
                             <p><a href="../viewjobs/viewjobs.php"><button type="button" class="btn btn-primary btn-lg btn-block ">View jobs</button></a></p>
-                            <p><a href="../php/SetAvailability"><button type="button" class="btn btn-primary btn-lg btn-block">Set your availability</button></a></p>
+                            <p><a href="../active/setactive.php"><button type="button" class="btn btn-primary btn-lg btn-block">Set your availability</button></a></p>
                             <p><a href="../profile/profile.php"><button type="button" class="btn btn-primary btn-lg btn-block" href = "/php/jobpost.php">My Profile</button></a></p>
                         </div>
                     </div>
