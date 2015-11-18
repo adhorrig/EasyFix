@@ -38,7 +38,7 @@
                             <a href="../jobpost/jobpostView.php">Post a job</a>
                         </li>
                         <li>
-                            <a href="#">Set your availability</a>
+                            <a href="../active/viewactive.php">View active tradesmen</a>
                         </li>
                         <li>
                             <a href="../profile/profile.php">Your profile</a>
@@ -62,7 +62,7 @@
                             <br/>
                             <br/>
                             <p><a href="../jobpost/jobpostView.php"><button type="button" class="btn btn-success btn-lg btn-block ">Post a job</button></a></p>
-                            <p><a href="../php/SetAvailability"><button type="button" class="btn btn-success btn-lg btn-block">View available tradesmen</button></a></p>
+                            <p><a href="../active/viewactive.php"><button type="button" class="btn btn-success btn-lg btn-block">View available tradesmen</button></a></p>
                             <p><a href="../profile/profile.php"><button type="button" class="btn btn-success btn-lg btn-block" href = "/php/jobpost.php">My Profile</button></a></p>
                         </div>
                     </div>
