@@ -1,5 +1,0 @@
-website color codes
-
-green-#21b573
-black-#38394b
-orange-#f79420
