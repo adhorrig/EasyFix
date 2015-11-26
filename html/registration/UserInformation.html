@@ -20,7 +20,7 @@
         <div class = "container">
             <div class = "jumbotron other-color">
                 <div class="wrapper">
-                    <form action="../../php/registration/userinformation.php" method="POST" name="ContinueRegistration" class="form-signin" >
+                    <form action="../../php/registration/userinformation.php" method="POST" name="ContinueRegistration" class="form-signin" enctype="multipart/form-data" >
                         <h3 class="form-signin-heading">Continue Registration</h3>
                         <hr class="colorgraph">
                         <br>
@@ -45,6 +45,8 @@
                         <h4><b>Phone number:</b></h4>
                         <input type="text" class="form-control" name="phone" placeholder="Your phone number" required=""/>
                         </br>
+						<input type="file" class="form-control" name="image" placeholder="Upload a photo" required=""/>
+						</br>
                         <div class="btn-toobar">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>

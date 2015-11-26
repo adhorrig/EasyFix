@@ -64,7 +64,7 @@
                     while($row = $result->fetch_object()){
         ?>
         <div class = "jumbotron other-color" align="center">
-            <img src="../../images/liam.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"/>
+            <img src="../../images/<?php echo $row->profilepic; ?>" class="img-circle" alt="Cinque Terre" width="304" height="236"/>
             <h4> <b>Forename:</b> </h4><?php echo $row->forename; ?><br><br>
             <h4> <b>Surname:</b> </h4><?php echo $row->surname; ?><br><br>
             <h4> <b>Address:</b> </h4><?php echo $row->address; ?><br><br>

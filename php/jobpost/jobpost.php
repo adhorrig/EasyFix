@@ -17,9 +17,9 @@
 		die('File size can not be greater than 1mb');
 	} else {
 		move_uploaded_file($file_tmp, "../../images/" . $uniqname);
-			mysqli_query($db,"INSERT INTO jobs (description, price, urgency, username, photo)
-			VALUES ('". $description ."', '". $price ."', '". $urgency ."', '". $_SESSION['username']. "', '". $uniqname . "')")
-			or die(mysqli_error($db));
-			include('JobPostConfirm.php');
+		mysqli_query($db,"INSERT INTO jobs (description, price, urgency, username, photo)
+		VALUES ('". $description ."', '". $price ."', '". $urgency ."', '". $_SESSION['username']. "', '". $uniqname . "')")
+		or die(mysqli_error($db));
+		include('JobPostConfirm.php');
 	}
 ?>
