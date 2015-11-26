@@ -56,7 +56,7 @@
                 <!--/.container-fluid -->
             </nav>
             <div class="jumbotron other-color">
-                <form action="jobpost.php" method="POST" name="JobPost" class="form-signin" >
+                <form action="jobpost.php" method="POST" name="JobPost" class="form-signin" enctype="multipart/form-data" >
                     <h3 class="form-signin-heading">Post a job!</h3>
                     <hr class="colorgraph">
                     <br>
@@ -68,6 +68,8 @@
                     </br>
                     <h4><b>Urgency level</b></h4>
                     <input type="text" class="form-control" name="urgency" placeholder="High, medium, low?" required=""/>
+                    </br>
+                    <input type="file" class="form-control" name="image" placeholder="Upload a photo" required=""/>
                     </br>
                     <div class="btn-toolbar">
                         <button type="submit" class="btn btn-primary">Submit</button>
