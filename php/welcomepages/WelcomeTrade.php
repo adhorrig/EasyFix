@@ -38,7 +38,7 @@
                             <a href="../jobpost/jobpostView.php">View jobs</a>
                         </li>
                         <li>
-                            <a href="../active/setactive.php">Set your availability</a>
+                            <a href="../active/setavtive.php">Set your availability</a>
                         </li>
                         <li>
                             <a href="../profile/profile.php">Your profile</a>
