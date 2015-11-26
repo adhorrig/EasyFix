@@ -14,13 +14,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <title>HomeScreen</title>
-	  <link rel="stylesheet" href="css/demo.css">
-	<link rel="stylesheet" href="css/footer-basic-centered.css">
-	  
       <style type="text/css">
-	  
-.modal-header, h4, .close {
-      background-color: #21B573;
+	  		 .modal-header, h4, .close {
+      background-color: #5cb85c;
       color:white !important;
       text-align: center;
       font-size: 30px;
@@ -30,12 +26,13 @@
   }
 	  
 	  
-body{
-        font-family: 'Oswald', sans-serif;
-		background-image: url(images/bg5.png);
-		background-size: cover;
+         body{
+           
+			background-image: url(images/bg2.jpg);
+			background-size: cover;
+			
 			}
-.other-color{
+		 .other-color{
 			background-color:#c0c0c0;
 		}
          .btn-xlarge {
@@ -46,167 +43,71 @@ body{
          -moz-border-radius: 8px;
          border-radius: 8px;
          }
-.container {
-		 height:100%;
-		 background: #1D976C /* fallback for old browsers */
-		background: -webkit-linear-gradient(to left, #1D976C , #93F9B9); /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to left, #1D976C , #93F9B9);
-		background-size: cover;
+		 .container {
+		 margin-top:%;
 		 }
-		 
-h1 {
-        text-align: center;
-		color: white;
-		padding-top:5%;
-		margin-bottom:5%;
-	}
-@media screen and (max-width: 568px) {
-        h1 {
-    font-size:20px;
-    }
-}	
-$(window).on("resize", resize);
-$(document).ready(resize);
-    }
 		  .row {
 		 margin-top:5%;
 		 }	
 		 .img-thumbnail {
     cursor: pointer;
 }
-.img-responsive {
- display: block;
- height: auto;
- max-width: 100%;
-}
-.center-block {float: none !important}
-
-#custom-bootstrap-menu.navbar-default .navbar-brand {
+ #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: rgba(119, 119, 119, 1);
 }
 #custom-bootstrap-menu.navbar-default {
-    font-size: 20px;
-    background-color: rgba(247, 148, 32, 1);
-    background: -webkit-linear-gradient(top, rgba(248, 248, 248, 1) 0%, rgba(247, 148, 32, 1) 100%);
-    background: linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(247, 148, 32, 1) 100%);
+    font-size: 25px;
+    background-color: rgba(251, 224, 130, 1);
+    background: -webkit-linear-gradient(top, rgba(248, 248, 248, 1) 0%, rgba(251, 224, 130, 1) 100%);
+    background: linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(251, 224, 130, 1) 100%);
     border-width: 1px;
     border-radius: 4px;
 }
+#custom-bootstrap-menu.navbar-default .navbar-brand  {
+	font-size: 25px;
+	}
+
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
     color: rgba(119, 119, 119, 1);
-    background-color: rgba(247, 148, 32, 1);
-    background: -webkit-linear-gradient(top, rgba(248, 248, 248, 1) 0%, rgba(247, 148, 32, 1) 100%);
-    background: linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(247, 148, 32, 1) 100%);
+    background-color: rgba(248, 248, 248, 0);
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
     color: rgba(51, 51, 51, 1);
-    background-color: rgba(184, 184, 184, 1);
-    background: -webkit-linear-gradient(top, rgba(248, 248, 248, 0) 0%, rgba(184, 184, 184, 1) 100%);
-    background: linear-gradient(to bottom, rgba(248, 248, 248, 0) 0%, rgba(184, 184, 184, 1) 100%);
+    background-color: rgba(179, 186, 184, 1);
+    background: -webkit-linear-gradient(top, rgba(248, 248, 248, 0) 0%, rgba(179, 186, 184, 1) 100%);
+    background: linear-gradient(to bottom, rgba(248, 248, 248, 0) 0%, rgba(179, 186, 184, 1) 100%);
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
     color: rgba(85, 85, 85, 1);
-    background-color: rgba(250, 247, 247, 1);
-    background: -webkit-linear-gradient(top, rgba(231, 231, 231, 1) 0%, rgba(250, 247, 247, 1) 100%);
-    background: linear-gradient(to bottom, rgba(231, 231, 231, 1) 0%, rgba(250, 247, 247, 1) 100%);
+    background-color: rgba(178, 184, 183, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(178, 184, 183, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(178, 184, 183, 1) 100%);
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #faf7f7;
+    border-color: #b2b8b7;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #faf7f7;
+    background-color: #b2b8b7;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #faf7f7;
+    background-color: #b2b8b7;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #f79420;
+    background-color: #fbe082;
 }
-.btn-block { 
-  color: #FFFFFF; 
-  background-color: #F79420; 
-  border-color: #F7F7F7; 
-} 
- 
-.btn-block:hover, 
-.btn-block:focus, 
-.btn-block:active, 
-.btn-block.active, 
-.open .dropdown-toggle.btn-block { 
-  color: #FFFFFF; 
-  background-color: #F79420; 
-  border-color: #F7F7F7; 
-} 
- 
-.btn-block:active, 
-.btn-block.active, 
-.open .dropdown-toggle.btn-block { 
-  background-image: none; 
-} 
- 
-.btn-block.disabled, 
-.btn-block[disabled], 
-fieldset[disabled] .btn-block, 
-.btn-block.disabled:hover, 
-.btn-block[disabled]:hover, 
-fieldset[disabled] .btn-block:hover, 
-.btn-block.disabled:focus, 
-.btn-block[disabled]:focus, 
-fieldset[disabled] .btn-block:focus, 
-.btn-block.disabled:active, 
-.btn-block[disabled]:active, 
-fieldset[disabled] .btn-block:active, 
-.btn-block.disabled.active, 
-.btn-block[disabled].active, 
-fieldset[disabled] .btn-block.active { 
-  background-color: #F79420; 
-  border-color: #F7F7F7; 
-} 
- 
-.btn-block .badge { 
-  color: #F79420; 
-  background-color: #FFFFFF; 
-}
-
- #footer{
-margin-top:13%;
-background: -moz-linear-gradient(93deg, #f79420 0%, #FAFFFE 100%); /* ff3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FAFFFE), color-stop(100%, #f79420)); /* safari4+,chrome */
-background: -webkit-linear-gradient(93deg, #f79420 0%, #FAFFFE 100%); /* safari5.1+,chrome10+ */
-background: -o-linear-gradient(93deg, #f79420 0%, #FAFFFE 100%); /* opera 11.10+ */
-background: -ms-linear-gradient(93deg, #f79420 0%, #FAFFFE 100%); /* ie10+ */
-background: linear-gradient(357deg, #f79420 0%, #FAFFFE 100%); /* w3c */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FAFFFE', endColorstr='#f79420',GradientType=0 ); /* ie6-9 */
-        bottom: -50px;
-        height: 79px;
-       }
- ul.footer{
-            padding-top:20px;
-            text-align:center;
-          }
-
- ul.footer li{
-          color:#666666;
-          display:inline-block; 
-          }
       </style>
    </head>
    <body>
    
-   <div class="container">
-   <div class="page-header">
-  <img src="images/logo3.png" class="img-responsive" alt="Cinque Terre" class="img-responsive center-block" >
-</div>
-   
-	
+    <div class="container">
 <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
     <div class="container-fluid">
-        <div class="navbar-header"><a class="navbar-brand" href="#"></a>
+        <div class="navbar-header"><a class="navbar-brand" href="#">EasyFix</a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
         </div>
@@ -227,48 +128,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FAFFFE', end
         </div>
     </div>
 </div>
-			 
-    <h1>Our trusted traders can help, no matter what the task...</h1>
- 
-			
-				
-	
+  </div>
+
+
+
+	<div class = "container" >
+
 				<form action="" method="post" name="Login_Form" class="form-signin" >
+					<img src="images/logo.png" class="img-responsive center-block"  >
 						<div class="btn-toobar">
 						<!-- Trigger the modal with a button -->
 							 <a data-toggle="modal" data-target="#myModal">
 								<div class="row">
 									<div class="col-md-6">
-										<img src="images/customer.png" class="img-responsive center-block" class="img-responsive"  alt="Cinque Terre"  >		
+										<img src="images/customer.png" class="img-thumbnail" alt="Cinque Terre" class="img-responsive center-block" >		
 									</div>
 									<div class="col-md-6 ">
-										<img src="images/trade.png" class="img-responsive center-block"  class="img-responsive"  alt="Cinque Terre"  >
+										<img src="images/trade.png" class="img-thumbnail" alt="Cinque Terre" class="img-responsive center-block"  >
 									</div>
 								</div>
 							</a>
-							</div>	
-					</form>	
-
-
-		
-      <div class="row">
-       <div class="span12">
-        <div id="footer">
-
-           <ul class="footer">
-
-            <li><li>Terms and Conditions</li>&nbsp;&nbsp;
-            <li>Privacy Policy</li></li>&nbsp;&nbsp;
-			<li>Contact us</li>&nbsp;&nbsp;
-            <li>Copyright © 2015 Easyfix.ie</li>
-           <ul>
-
-       
-     </div>
-  </div>
-</div>
-</div>
-
+						</div>
+				</form>
+		</div>
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -280,20 +162,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FAFFFE', end
           <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
         </div>
         <div class="modal-body" style="padding:40px 50px;">
-          <form action="php/registration/login.php" method="POST" name="Login_Form" class="form-signin" >
-                    <h3 class="form-signin-heading">Welcome Back! Please Sign In</h3>
-                    <hr class="colorgraph">
-                    <h4><b>Username:</b></h4>
-                    <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" />
-                    </br>
-					<h4><b>Password:</b></h4>
-                    <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
-                    </br>
-                    <div class="btn-toobar">
-                        <button type="submit" class="btn btn-primary">Login</button>&nbsp;&nbsp;
-                        <a href = "Registration.html"><button type="button" class="btn btn-primary">Register</button></a>
-                    </div>
-                </form>
+          <form role="form">
+            <div class="form-group">
+			<form action="../../php/registration/login.php" method="POST" name="Login_Form" class="form-signin" >
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
         </div>
         <div class="modal-footer">
           <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
@@ -303,10 +186,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FAFFFE', end
       </div>
       
     </div>
-
   </div> 
 </div>
-
+ 
 <script>
 $(document).ready(function(){
     $("#myBtn").click(function(){

@@ -8,39 +8,12 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <title>Register for an account</title>
         <style type="text/css">
-		
-body{
-        font-family: 'Oswald', sans-serif;
-		background-image: url(../../images/bg5.png);
-		background-size: cover;
-	}			
-.other-color{
-        background-color:#c0c0c0;
+            body{
+            background-color: #E8E8E8;
             }
-.container {
-		height:100%;
-		background: #1D976C /* fallback for old browsers */
-		background: -webkit-linear-gradient(to left, #1D976C , #93F9B9); /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to left, #1D976C , #93F9B9);
-		background-size: cover;
-		 }
-		 
-		 .jumbotron{
-		 background-color:#f79420;
-		 }
-.btn {
-		background: #1D976C /* fallback for old browsers */
-		background: -webkit-linear-gradient(to left, #1D976C , #93F9B9); /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to left, #1D976C , #93F9B9);
-		
-}
-h3{
-		background: #1D976C /* fallback for old browsers */
-		background: -webkit-linear-gradient(to left, #1D976C , #93F9B9); /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to left, #1D976C , #93F9B9);
-		background-size: cover;
-		color:#ffffff;
-}
+            .other-color{
+            background-color:#c0c0c0;
+            }
         </style>
     </head>
     <body>
@@ -48,11 +21,7 @@ h3{
             <div class = "jumbotron other-color">
                 <div class="wrapper">
                     <form action="../../php/registration/userinformation.php" method="POST" name="ContinueRegistration" class="form-signin" >
-                        <h3 class="form-signin-heading"
-						<a href="../../index.html">
-						<img src="../../images/reg2.png" class="img-responsive" alt="Cinque Terre" class="img-responsive center-block" >
-						</a>
-						</h3>
+                        <h3 class="form-signin-heading">Continue Registration</h3>
                         <hr class="colorgraph">
                         <br>
                         <h4><b>Forename</b></h4>
@@ -74,7 +43,7 @@ h3{
                         <input type="text" class="form-control" name="phone" placeholder="Your phone number" required=""/>
                         </br>
                         <div class="btn-toobar">
-							<button type="submit" class="btn btn-success btn-lg">Submit <span class="glyphicon glyphicon-ok"></span></button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
                 </div>
