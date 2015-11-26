@@ -31,16 +31,82 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <title>Welcome</title>
         <style type="text/css">
-        body{
-            background-color: #E8E8E8;
-        }
-        .other-color{
-            background-color: #c0c0c0;
-        }
-        #map{
-            height:100%;
-        }
-    </style>
+		body{
+				font-family: 'Oswald', sans-serif;
+				background-image: url(../../images/bg5.png);
+				background-size: cover;
+					}
+					.other-color{
+					background-color:#c0c0c0;
+					}
+		.container {
+				 height:100%;
+				 background: #1D976C /* fallback for old browsers */
+				background: -webkit-linear-gradient(to left, #1D976C , #93F9B9); /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(to left, #1D976C , #93F9B9);
+				background-size: cover;
+				 }			
+					
+					
+					
+		#custom-bootstrap-menu.navbar-default .navbar-brand {
+			color: rgba(119, 119, 119, 1);
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-brand {
+			color: rgba(119, 119, 119, 1);
+		}
+		#custom-bootstrap-menu.navbar-default {
+			font-size: 20px;
+			background-color: rgba(247, 148, 32, 1);
+			background: -webkit-linear-gradient(top, rgba(248, 248, 248, 1) 0%, rgba(247, 148, 32, 1) 100%);
+			background: linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(247, 148, 32, 1) 100%);
+			border-width: 1px;
+			border-radius: 4px;
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+			color: rgba(119, 119, 119, 1);
+			background-color: rgba(247, 148, 32, 1);
+			background: -webkit-linear-gradient(top, rgba(248, 248, 248, 1) 0%, rgba(247, 148, 32, 1) 100%);
+			background: linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(247, 148, 32, 1) 100%);
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+		#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+			color: rgba(51, 51, 51, 1);
+			background-color: rgba(184, 184, 184, 1);
+			background: -webkit-linear-gradient(top, rgba(248, 248, 248, 0) 0%, rgba(184, 184, 184, 1) 100%);
+			background: linear-gradient(to bottom, rgba(248, 248, 248, 0) 0%, rgba(184, 184, 184, 1) 100%);
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+		#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+		#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+			color: rgba(85, 85, 85, 1);
+			background-color: rgba(250, 247, 247, 1);
+			background: -webkit-linear-gradient(top, rgba(231, 231, 231, 1) 0%, rgba(250, 247, 247, 1) 100%);
+			background: linear-gradient(to bottom, rgba(231, 231, 231, 1) 0%, rgba(250, 247, 247, 1) 100%);
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-toggle {
+			border-color: #faf7f7;
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+		#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+			background-color: #faf7f7;
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+			background-color: #faf7f7;
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+		#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+			background-color: #f79420;}
+			
+		.panel {
+					  min-height: 430px;
+					  max-width:425px;
+		  }          
+		  
+		  .jumbotron{background-color:lightgray;}
+		  .bg-success{background-color:white}
+
+        </style>
     <script>
         var marker;
 
@@ -108,7 +174,7 @@
               </div>
               <!--/.container-fluid -->
           </nav>
-          <div class = "jumbotron other-color" align="center">
+          <div class = "jumbotron bg-success" align="center">
               <h4> The location of the job is below </h4>
               <div class="btn-toobar">
                   <a href='../mail/mail.php?jobid=<?php echo $_GET['jobid']; ?>'><button type="submit" class="btn btn-primary">Let the job poster know that you are leaving.</button></a> </br>
