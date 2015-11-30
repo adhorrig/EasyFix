@@ -85,10 +85,7 @@
                         <option name = "Carpentry"> Carpentry</option>
                         <option name = "Gas"> Gas</option>
                         <option name = "Steel"> Steel</option>
-                        <option name = "Home conversions"> Home conversions</option>
-                        <option name = "Brick laying"> Brick laying</option>
                         <option name = "Gardening"> Gardening</option>
-                        <option name = "Home extensions"> Home extensions</option>
                         <option name = "Tilers"> Tilers</option>
                         <option name = "Sewage"> Sewage</option>
                     </select>

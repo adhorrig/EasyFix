@@ -52,42 +52,40 @@
             </div>
             <!--/.container-fluid -->
         </nav>
-        <ul class="nav nav-tabs">
-            <li role="presentation" class="active"><a href="category.php?c=electrical">Electrical</a></li>
-            <li role="presentation"><a href="category.php?c=plumbing">Plumbing</a></li>
-            <li role="presentation"><a href="category.php?c=painting">Painting</a></li>
-            <li role="presentation"><a href="category.php?c=carpentry">Carpentry</a></li>
-            <li role="presentation"><a href="category.php?c=gas">Gas</a></li>
-            <li role="presentation"><a href="category.php?c=steel">Steel</a></li>
-            <li role="presentation"><a href="category.php?c=gardening">Gardening</a></li>
-            <li role="presentation"><a href="category.php?c=tilers">Tilers</a></li>
-            <li role="presentation"><a href="category.php?c=sewage">Sewage</a></li>
+<?php
 
-        </ul>
-      </br>
-        <?php
-		    require '../connect.php';
-	           if($result = $db->query("SELECT id,description,price,urgency,photo,category FROM jobs ")){
-	                if($count = $result->num_rows){
-                        while($row = $result->fetch_object()){
-		  	?>
-			  <div class = "jumbotron other-color">
+if (isset($_GET['c'])) {
+    $category = $_GET['c'];
+    print getCategory($category);
+}
 
-            <h4> <b>Description:</b> </h4><?php echo $row->description; ?><br><br>
-        	  <h4> <b>Price: </b></h4><?php echo $row->price; ?><br><br>
-        		<h4> <b>Urgency: </b> </h4><?php echo $row->urgency; ?><br><br>
-            <h4> <b>Category: </b> </h4><?php echo $row->category; ?><br><br>
-            <img src = "../../images/<?php echo $row->photo; ?>" alt = "No image provided"/><br><br>
-            <div class="btn-toobar">
-                <a href='acceptjob.php?jobid=<?php echo $row->id; ?>'><button type="submit" class="btn btn-primary">Accept job</button></a>
-            </div>
+function getCategory($category)
+{
+    require '../connect.php';
+    if ($result = $db->query("SELECT id,description,price,urgency,photo,category FROM jobs WHERE category LIKE '$category'")) {
+        if ($result->num_rows) {
+            while ($row = $result->fetch_object()) {
+    ?>
+    <div class = "jumbotron other-color">
+        <h4> <b>Description:</b> </h4><?php echo $row->description; ?><br><br>
+        <h4> <b>Price: </b></h4><?php echo $row->price; ?><br><br>
+        <h4> <b>Urgency: </b> </h4><?php echo $row->urgency; ?><br><br>
+        <h4> <b>Category: </b> </h4><?php echo $row->category; ?><br><br>
+        <img src = "../../images/<?php echo $row->photo; ?>" alt = "No image provided"/><br><br>
+        <div class="btn-toobar">
+            <a href='acceptjob.php?jobid=<?php echo $row->id; ?>'><button type="submit" class="btn btn-primary">Accept job</button></a>
         </div>
-	      <?php
-		                  }
-				          $result->free();
-                  }
-             }
-		    ?>
-        </div>
-    </body>
-</html>
+    </div>
+    <?php
+            }
+        } else{
+          ?>
+          <div class = "jumbotron other-color">
+              <h4> There was no result found <h4>
+          </div>
+          <?php
+        }
+    }
+}
+
+?>
