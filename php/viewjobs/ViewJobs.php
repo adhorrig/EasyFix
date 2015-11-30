@@ -1,11 +1,21 @@
 <html>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type = "text/javascript">
+            $('.nav li a').click(function (e) {
+            $('.nav li').removeClass('active');
+            var $parent = $(this).parent();
+            if (!$parent.hasClass('active')) {
+                $parent.addClass('active');
+            }
+            });
+        </script>
         <title>View Jobs</title>
         <style type="text/css">
             body{
@@ -53,7 +63,7 @@
             <!--/.container-fluid -->
         </nav>
         <ul class="nav nav-tabs">
-            <li role="presentation" class="active"><a href="category.php?c=electrical">Electrical</a></li>
+            <li role="presentation" class="active"><a href="ViewJobs.php">All</a></li>
             <li role="presentation"><a href="category.php?c=plumbing">Plumbing</a></li>
             <li role="presentation"><a href="category.php?c=painting">Painting</a></li>
             <li role="presentation"><a href="category.php?c=carpentry">Carpentry</a></li>
@@ -62,32 +72,32 @@
             <li role="presentation"><a href="category.php?c=gardening">Gardening</a></li>
             <li role="presentation"><a href="category.php?c=tilers">Tilers</a></li>
             <li role="presentation"><a href="category.php?c=sewage">Sewage</a></li>
-
+            <li role="presentation"><a href="category.php?c=electrical">Electrical</a></li>
         </ul>
-      </br>
-        <?php
-		    require '../connect.php';
-	           if($result = $db->query("SELECT id,description,price,urgency,photo,category FROM jobs ")){
-	                if($count = $result->num_rows){
-                        while($row = $result->fetch_object()){
-		  	?>
-			  <div class = "jumbotron other-color">
+            </br>
+              <?php
+      		    require '../connect.php';
+      	           if($result = $db->query("SELECT id,description,price,urgency,photo,category FROM jobs ")){
+      	                if($count = $result->num_rows){
+                              while($row = $result->fetch_object()){
+      		  	?>
+      			  <div class = "jumbotron other-color">
 
-            <h4> <b>Description:</b> </h4><?php echo $row->description; ?><br><br>
-        	  <h4> <b>Price: </b></h4><?php echo $row->price; ?><br><br>
-        		<h4> <b>Urgency: </b> </h4><?php echo $row->urgency; ?><br><br>
-            <h4> <b>Category: </b> </h4><?php echo $row->category; ?><br><br>
-            <img src = "../../images/<?php echo $row->photo; ?>" alt = "No image provided"/><br><br>
-            <div class="btn-toobar">
-                <a href='acceptjob.php?jobid=<?php echo $row->id; ?>'><button type="submit" class="btn btn-primary">Accept job</button></a>
-            </div>
-        </div>
-	      <?php
-		                  }
-				          $result->free();
-                  }
-             }
-		    ?>
-        </div>
-    </body>
-</html>
+                  <h4> <b>Description:</b> </h4><?php echo $row->description; ?><br><br>
+              	  <h4> <b>Price: </b></h4><?php echo $row->price; ?><br><br>
+              		<h4> <b>Urgency: </b> </h4><?php echo $row->urgency; ?><br><br>
+                  <h4> <b>Category: </b> </h4><?php echo $row->category; ?><br><br>
+                  <img src = "../../images/<?php echo $row->photo; ?>" alt = "No image provided"/><br><br>
+                  <div class="btn-toobar">
+                      <a href='acceptjob.php?jobid=<?php echo $row->id; ?>'><button type="submit" class="btn btn-primary">Accept job</button></a>
+                  </div>
+              </div>
+      	      <?php
+      		                  }
+      				          $result->free();
+                        }
+                   }
+      		    ?>
+              </div>
+          </body>
+      </html>

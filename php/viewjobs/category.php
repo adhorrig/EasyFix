@@ -52,6 +52,20 @@
             </div>
             <!--/.container-fluid -->
         </nav>
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="ViewJobs.php">All</a></li>
+            <li role="presentation"><a href="category.php?c=plumbing">Plumbing</a></li>
+            <li role="presentation"><a href="category.php?c=painting">Painting</a></li>
+            <li role="presentation"><a href="category.php?c=carpentry">Carpentry</a></li>
+            <li role="presentation"><a href="category.php?c=gas">Gas</a></li>
+            <li role="presentation"><a href="category.php?c=steel">Steel</a></li>
+            <li role="presentation"><a href="category.php?c=gardening">Gardening</a></li>
+            <li role="presentation"><a href="category.php?c=tilers">Tilers</a></li>
+            <li role="presentation"><a href="category.php?c=sewage">Sewage</a></li>
+            <li role="presentation" ><a href="category.php?c=electrical">Electrical</a></li>
+
+        </ul>
+      </br>
 <?php
 
 if (isset($_GET['c'])) {
