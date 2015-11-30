@@ -67,10 +67,32 @@
                     <input type="text" class="form-control" name="price" placeholder="Price for the job" required="" autofocus="" />
                     </br>
                     <h4><b>Urgency level</b></h4>
-                    <input type="text" class="form-control" name="urgency" placeholder="High, medium, low?" required=""/>
+                    <select name = "urgency" class = "form-control" required = "">
+                        <option name = "High">High</option>
+                        <option name = "Medium"> Medium</option>
+                        <option name = "Low">Low</option>
+                    </select>
                     </br>
+                    <h4><b> Upload photo</b></h4>
                     <input type="file" class="form-control" name="image" placeholder="Upload a photo" required=""/>
                     </br>
+                    <h4><b>Category</h4>
+                    </b>
+                    <select name = "category" class = "form-control"required = "">
+                        <option name = "Electrical"> Electrical</option>
+                        <option name = "Plumbing"> Plumbing</option>
+                        <option name = "Painting"> Painting</option>
+                        <option name = "Carpentry"> Carpentry</option>
+                        <option name = "Gas"> Gas</option>
+                        <option name = "Steel"> Steel</option>
+                        <option name = "Home conversions"> Home conversions</option>
+                        <option name = "Brick laying"> Brick laying</option>
+                        <option name = "Gardening"> Gardening</option>
+                        <option name = "Home extensions"> Home extensions</option>
+                        <option name = "Tilers"> Tilers</option>
+                        <option name = "Sewage"> Sewage</option>
+                    </select>
+                  </br>
                     <div class="btn-toolbar">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>

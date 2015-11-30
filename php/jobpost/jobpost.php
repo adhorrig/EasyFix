@@ -5,6 +5,7 @@
 	$description = $_POST["comment"];
 	$price = $_POST["price"];
 	$urgency = $_POST["urgency"];
+	$category = $_POST["category"];
 	$file_size = $_FILES['image']['size'];
 	$file_tmp = $_FILES['image']['tmp_name'];
 	$uniqname = uniqid() . '.jpg';
@@ -17,8 +18,8 @@
 		die('File size can not be greater than 1mb');
 	} else {
 		move_uploaded_file($file_tmp, "../../images/" . $uniqname);
-		mysqli_query($db,"INSERT INTO jobs (description, price, urgency, username, photo)
-		VALUES ('". $description ."', '". $price ."', '". $urgency ."', '". $_SESSION['username']. "', '". $uniqname . "')")
+		mysqli_query($db,"INSERT INTO jobs (description, price, urgency, username, photo, category)
+		VALUES ('". $description ."', '". $price ."', '". $urgency ."', '". $_SESSION['username']. "', '". $uniqname . "', '". $category . "')")
 		or die(mysqli_error($db));
 		include('JobPostConfirm.php');
 	}
