@@ -7,6 +7,7 @@
 	$gender = $_POST["gender"];
 	$age = $_POST["age"];
 	$phonenumber = $_POST["phone"];
+	$expertise = $_POST["category"];
 
 
 	$dlocation = $address;
@@ -29,8 +30,8 @@
 		die('File size can not be greater than 1mb');
 	} else {
 		move_uploaded_file($file_tmp, "../../images/" . $uniqname);
-		mysqli_query($db,"INSERT INTO userinformation (address, forename, surname, gender, age, username, phonenumber, latitude, longitude, profilepic)
-		VALUES ('". $address ."', '". $forename ."', '". $surname ."', '". $gender ."', '". $age ."', '". $_SESSION["usernameReg"] ."', '". $phonenumber ."', '". $latitude ."', '". $longitude ."', '". $uniqname ."')")
+		mysqli_query($db,"INSERT INTO userinformation (address, forename, surname, gender, age, username, phonenumber, expertise, latitude, longitude, profilepic)
+		VALUES ('". $address ."', '". $forename ."', '". $surname ."', '". $gender ."', '". $age ."', '". $_SESSION["usernameReg"] ."', '". $phonenumber ."', '". $expertise ."', '". $latitude ."', '". $longitude ."', '". $uniqname ."')")
 		or die(mysqli_error($db));
 		header('Location: ../../html/registration/login.html');
 	}

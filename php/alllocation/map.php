@@ -27,16 +27,30 @@
                 var xml = data.responseXML;
                 markers = xml.documentElement.getElementsByTagName("marker");
                 for (var i = 0; i < markers.length; i++) {
+                    var name = markers[i].getAttribute("name");
+                    var surname = markers[i].getAttribute("surname");
+                    var phone = markers[i].getAttribute("phone");
+                    var call = markers[i].getAttribute("call");
+                    var expertise = markers[i].getAttribute("expertise");
                     var point = new google.maps.LatLng(
                         parseFloat(markers[i].getAttribute("lat")),
                         parseFloat(markers[i].getAttribute("lng")));
+                    var html = "<b>" + name + surname + "</b> <br/>" + call + "</b> <br/>" + phone + "</b> <br/>" + expertise;
                     var marker = new google.maps.Marker({
                         map: map,
                         position: point,
                         title: name
                     });
+                    bindInfoWindow(marker, map, infoWindow, html);
                     map.markers.push(marker);
                 }
+            });
+        }
+
+        function bindInfoWindow(marker, map, infoWindow, html) {
+            google.maps.event.addListener(marker, 'click', function() {
+                infoWindow.setContent(html);
+                infoWindow.open(map, marker);
             });
         }
 
