@@ -1,0 +1,1 @@
+This project was developed as part of a "Group Project" module. The idea of the project is to allow persons to easily find local tradesmen through the use of Google Maps.
